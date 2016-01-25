@@ -138,7 +138,12 @@ body.main {
 }
 
 .section-ready {
-	background: url(../res/img/ready.jpg);
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../res/img/ready.jpg);
+    color: black;
+}
+
+.section-ready a {
+    color: black;
 }
 
 .header-title {
@@ -182,6 +187,7 @@ body.main {
 
 a {
     text-decoration: underline;
+    color: white;
 }
 
 a:hover {
