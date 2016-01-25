@@ -26,6 +26,19 @@ body {
     bottom: 75px;
 }
 
+.logo-white {
+    position: fixed;
+    top: 25px;
+    left: 75px;
+}
+
+.sponsor-link {
+    text-transform: uppercase;
+    position: fixed;
+    top: 25px;
+    right: 75px;
+}
+
 .gray-bg {
     background-color: #eee;
 }
@@ -133,6 +146,11 @@ body.main {
     background: url(../res/img/bg.jpg);
 }
 
+.header-2 {
+    padding-bottom: 100px;
+    background: url(../res/img/footer.png);
+}
+
 .section-questions {
     background: url(../res/img/questions.jpg);
 }
@@ -143,6 +161,18 @@ body.main {
 
 .header-title {
     font-size: 9em;
+}
+
+.header-subtitle {
+    font-size: 2em;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.email-input {
+    margin-right: 0;
 }
 
 .slide-title {
@@ -217,6 +247,12 @@ footer {
 
 .form-container {
     width: 50px;
+}
+
+.footer-img {
+    position: fixed;
+    background-size: cover;
+    background-image: url(../res/img/footer.png);
 }
 
 /* Dark-Buttons */
