@@ -3,11 +3,6 @@
     src: url(../res/fonts/Avenir.otf);
 }
 
-html {
-    transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-}
-
 html, body {
     width: 100%;
     height: 100%;
@@ -94,13 +89,44 @@ body.main {
     vertical-align: middle;
 }
 
-.section-about {
+.section-about, .section-sponsors {
     height: 40%;
 }
 
 .fixed-bg {
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+.navbar-custom {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 50;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.navbar-custom .navbar-custom-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-custom .navbar-custom-container {
+    width: 450px;
+    margin: auto;
+}
+
+.navbar-custom-ul .navbar-custom-nav {
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.navbar-custom-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .header {
