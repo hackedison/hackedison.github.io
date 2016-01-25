@@ -89,7 +89,7 @@ body.main {
     vertical-align: middle;
 }
 
-.section-about, .section-sponsors {
+.section-about, .section-sponsors, .section-contact {
     height: 40%;
 }
 
@@ -113,7 +113,7 @@ body.main {
 }
 
 .navbar-custom .navbar-custom-container {
-    width: 500px;
+    width: 585px;
     margin: auto;
 }
 
@@ -160,6 +160,14 @@ body.main {
 
 .bottom-padding {
     padding: 0 0 25px 0;
+}
+
+.social-outlets {
+    font-size: 36px;
+}
+
+.social-outlet {
+    padding: 10px;
 }
 
 @media (max-width: 992px) {

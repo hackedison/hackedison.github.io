@@ -7,6 +7,7 @@
         HackEHS | Edison High School's High School Hackathon
     </title>
     <link rel='stylesheet' href='css/bootstrap.min.css' />
+    <link rel='stylesheet' href='font-awesome/css/font-awesome.min.css' />
     <link rel='stylesheet' href='css/animate.css' />
     <link rel='stylesheet' href='css/main.css' />
     <script src='js/jquery.js'></script>
@@ -19,17 +20,27 @@
     <div class="navbar-custom">
         <div class="navbar-custom-container">
             <ul class="navbar-custom-ul">
-                <li class="navbar-custom-nav"><a href="#home">Home</a></li>
-                <li class="navbar-custom-nav"><a href="#about">About</a></li>
-                <li class="navbar-custom-nav"><a href="#questions">Questions</a></li>
-                <li class="navbar-custom-nav"><a href="#sponsors">Sponsors</a></li>
-                <li class="navbar-custom-nav"><a href="#register">Register</a></li>
+                <li class="navbar-custom-nav top"><a href="#home">Home</a></li>
+                <li class="navbar-custom-nav middle"><a href="#about">About</a></li>
+                <li class="navbar-custom-nav top"><a href="#questions">Questions</a></li>
+                <li class="navbar-custom-nav middle"><a href="#sponsors">Sponsors</a></li>
+                <li class="navbar-custom-nav top"><a href="#register">Register</a></li>
+                <li class="navbar-custom-nav top"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 
     <script>
-        $('.navbar-custom-nav a').smoothScroll();
+        $('.navbar-custom-nav.top a').smoothScroll({
+            speed: 'auto',
+            autoCoefficient: 1
+        });
+
+        $('.navbar-custom-nav.middle a').smoothScroll({
+            speed: 'auto',
+            autoCoefficient: 1,
+            offset: -300
+        });
     </script>
 
     <div class="container-fluid slide full-height header fixed-bg" id="home">
@@ -122,6 +133,23 @@
 					<p>Great! Click <a href="register.html">here</a>!</p>
 			</div>
 		</div>
+    </div>
+
+    <div class="container-fluid slide bg-primary section-contact" id="contact">
+
+        <div class="row slide-content">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1>Contact</h1>
+                <p>We're available on these social outlets:</p>
+                <p class="social-outlets">
+                    <a class="social-outlet" href="#"><span class="fa fa-envelope"></span></a>
+                    <a class="social-outlet" href="#"><span class="fa fa-twitter-square"></span></a>
+                    <a class="social-outlet" href="#"><span class="fa fa-facebook-square"></span></a>
+                    <a class="social-outlet" href="#"><span class="fa fa-instagram"></span></a>
+                </p>
+            </div>
+        </div>
+
     </div>
 
 </body>
