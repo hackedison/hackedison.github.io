@@ -66,11 +66,20 @@ body {
 }
 
 .main-btn {
-    font-weight: 700;
-    background-color: transparent;
+    border-radius: 5px;
     border: 1px solid white; /* otc */
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.5em;
+    background-color: transparent;
     color: white; /* otc */
     text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .main-btn {
+        font-size: 2.4em;
+    }
 }
 
 .main-btn:hover {
@@ -163,6 +172,12 @@ body.main {
     font-size: 9em;
 }
 
+@media (max-width: 992px) {
+    .header-title {
+        font-size: 15em;
+    }
+}
+
 .header-subtitle {
     font-size: 2em;
 }
@@ -224,6 +239,12 @@ p {
     font-size: 1.5em;
 }
 
+@media (max-width: 992px) {
+    .header p {
+        font-size: 3em;
+    }
+}
+
 hr.small {
     max-width: 100px;
 }
@@ -255,36 +276,6 @@ footer {
     background-image: url(../res/img/footer.png);
 }
 
-/* Dark-Buttons */
-
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    text-decoration: none;
-    background-color: rgba(0,0,0,0.3);
-}
-
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-/* Light Buttons */
-
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
-}
 
 /* Utility */
 
