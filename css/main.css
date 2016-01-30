@@ -139,6 +139,13 @@ body.main {
     margin: auto;
 }
 
+@media (max-width: 992px) {
+    .navbar-custom .navbar-custom-container {
+        width: 600px;
+        margin: auto;
+    }
+}
+
 .navbar-custom-ul .navbar-custom-nav {
     display: inline-block;
     padding: 15px;
