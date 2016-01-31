@@ -149,7 +149,12 @@ body.main {
 .navbar-custom-ul .navbar-custom-nav {
     display: inline-block;
     padding: 15px;
+    padding-bottom: 10px;
     font-size: 18px;
+}
+
+.navbar-custom-nav.active {
+    background-color: rgb(64, 64, 64);
 }
 
 .navbar-custom-nav a {
@@ -277,6 +282,11 @@ hr.white {
 .bg-primary {
     background-color: #222;
     color: white;
+}
+
+.bg-secondary {
+    background-color: #666;
+    color: #ccc;
 }
 
 footer {

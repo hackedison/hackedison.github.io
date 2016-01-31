@@ -12,7 +12,6 @@
     <link rel='stylesheet' href='css/main.css' />
     <script src='js/jquery.js'></script>
     <script src='js/smooth-scroll.js'></script>
-    <script src='js/main.js'></script>
     
 </head>
 <body class="main">
@@ -20,7 +19,7 @@
     <div class="navbar-custom">
         <div class="navbar-custom-container">
             <ul class="navbar-custom-ul">
-                <li class="navbar-custom-nav top"><a href="#home">Home</a></li>
+                <li class="navbar-custom-nav active top"><a href="#home">Home</a></li>
                 <li class="navbar-custom-nav middle"><a href="#about">About</a></li>
                 <li class="navbar-custom-nav top"><a href="#questions">Questions</a></li>
                 <li class="navbar-custom-nav middle"><a href="#sponsors">Sponsors</a></li>
@@ -148,21 +147,15 @@
 
     </div>
 
-    <script>
-	    var defaultOptions = {
-	    	speed: 'auto',
-	    	autoCoefficient: 1
-	    };
+    <div class="container-fluid slide bg-secondary section-footer">
+        <div class="row slide-content">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+                <h4>Made with &hearts; by HackEHS</h4>
+            </div>
+        </div>
+    </div>
 
-        $('.navbar-custom-nav.top a').smoothScroll(defaultOptions);
-        $('.question-answer a').smoothScroll(defaultOptions);
-
-        $('.navbar-custom-nav.middle a').smoothScroll({
-            speed: 'auto',
-            autoCoefficient: 1,
-            offset: -250
-        });
-    </script>
+    <script src='js/main.js'></script>
 
 </body>
 </html>

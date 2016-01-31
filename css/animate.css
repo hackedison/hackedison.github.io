@@ -7,6 +7,11 @@
   animation-fill-mode: both;
 }
 
+.animated.ease-in {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -164,6 +169,23 @@
   animation-name: fadeInRight;
   -webkit-animation-fill-mode: forward;
   animation-fill-mode: forward;
+}
+
+@keyframes spinLogo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.spinLogo {
+  -webkit-animation-name: spinLogo;
+  animation-name: spinLogo;
 }
 
 .delay-half-s {
