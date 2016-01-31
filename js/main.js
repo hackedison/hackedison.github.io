@@ -11,11 +11,6 @@ $('.logo').on('click', function(e) {
 	}, 1000);
 });
 
-$('.navbar-custom-nav').on('click', function() {
-	$('.navbar-custom-nav').removeClass('active');
-	$(this).addClass('active');
-});
-
 var scrollPoints = [
 	0,
 	525,
