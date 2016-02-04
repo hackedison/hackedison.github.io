@@ -173,12 +173,8 @@ body.main {
 }
 
 .header {
-    background: url(../res/img/bg.jpg);
-}
-
-.header-2 {
+    background: url(../res/img/bg.png);
     padding-bottom: 100px;
-    background: url(../res/img/footer.png);
 }
 
 .section-questions {
