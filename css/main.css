@@ -119,10 +119,6 @@ body.main {
     vertical-align: middle;
 }
 
-.section-about, .section-sponsors {
-    height: 50%;
-}
-
 .section-footer {
     width: 100%;
     display: table;
@@ -185,14 +181,6 @@ body.main {
     padding-bottom: 100px;
 }
 
-.section-questions {
-    background: url(../res/img/questions.jpg);
-}
-
-.section-ready {
-	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../res/img/ready.jpg);
-}
-
 .header-title {
     font-size: 9em;
 }
@@ -250,6 +238,24 @@ body.main {
     padding: 10px;
 }
 
+a.social-outlet {
+    color: #F77;
+}
+
+a.social-outlet:visited {
+    color: #F77;
+}
+
+.section:nth-child(odd) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height : 50%;
+}
+
+#contact {
+    height: 100%;
+}
+
 @media (max-width: 992px) {
     .section:nth-child(odd) {
         background-attachment: scroll;
@@ -265,9 +271,17 @@ a {
     color: white;
 }
 
+a:visited {
+    color: white;
+}
+
 a:hover {
     color: #aaa;
     text-decoration: none;
+}
+
+a:active {
+    color: #aaa;
 }
 
 p {
@@ -293,13 +307,13 @@ hr.white {
 }
 
 .bg-primary {
-    background-color: #222;
+    background-color: #F77;
     color: white;
 }
 
 .bg-secondary {
-    background-color: #666;
-    color: #ccc;
+    background-color: white;
+    color: #222;
 }
 
 footer {
