@@ -82,6 +82,14 @@ body {
     }
 }
 
+.main-btn.left {
+    float: left;
+}
+
+.main-btn.right {
+    float: right;
+}
+
 .main-btn:hover {
     background-color: white;
     color: #487570;
