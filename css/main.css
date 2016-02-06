@@ -175,7 +175,13 @@ body.main {
     display: inline-block;
     padding: 15px;
     padding-bottom: 10px;
-    font-size: 1.26em;
+    font-size: 18px;
+}
+
+@media(max-width: 992px) {
+    .navbar-custom-ul .navbar-custom-nav {
+        font-size: 36px;
+    }
 }
 
 .navbar-custom-nav.active {
