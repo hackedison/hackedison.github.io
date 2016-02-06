@@ -147,12 +147,6 @@ body.main {
     background-color: rgb(251, 58, 95);
 }
 
-@media(max-width: 992px) {
-    .navbar-custom {
-        height: 100px;
-    }
-}
-
 .navbar-custom .navbar-custom-ul {
     list-style-type: none;
     margin: 0;
@@ -176,12 +170,6 @@ body.main {
     padding: 15px;
     padding-bottom: 10px;
     font-size: 18px;
-}
-
-@media(max-width: 992px) {
-    .navbar-custom-ul .navbar-custom-nav {
-        font-size: 36px;
-    }
 }
 
 .navbar-custom-nav.active {
