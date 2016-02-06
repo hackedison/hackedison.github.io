@@ -33,7 +33,7 @@ body {
     height: 50px;
 }
 
-.sponsor-link {
+.link {
     position: absolute;
     z-index: 100;
     top: 10px;
