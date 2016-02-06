@@ -17,45 +17,36 @@
 </head>
 <body class="main">
 
-    <div class="bg"></div>
-
-    <div class="navbar-custom">
-        <div class="navbar-custom-container">
-            <ul class="navbar-custom-ul">
-                <li class="navbar-custom-nav active top"><a href="#home">Home</a></li>
-                <li class="navbar-custom-nav middle"><a href="#about">About</a></li>
-                <li class="navbar-custom-nav top"><a href="#questions">Questions</a></li>
-                <li class="navbar-custom-nav middle"><a href="#sponsors">Sponsors</a></li>
-                <li class="navbar-custom-nav top"><a href="#register">Register</a></li>
-                <li class="navbar-custom-nav top"><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <div class="logo-view animated fadeInLeft">
+        <img class="logo" src="res/img/logo.png">
+    </div>
+    <div class="sponsor-link animated fadeInRight">
+        <h2><a href="mailto:contact@hackehs.com?subject=Potential Sponsor">Sponsor Us</a></h2>
     </div>
 
-    <div class="container-fluid slide full-height header" id="home">
+    <div class="container-fluid section slide full-height header" id="home">
         <div class="row slide-content">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="logo-view animated fadeInLeft">
-                    <img class="logo" src="res/img/logo.png">
-                </div>
                 <h1 class="animated fadeInUp delay-half-s header-title">HackEHS</h1>
                 <p class="animated fadeInUp delay-1s">Dream &middot; Develop &middot; Discover</p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animated fadeInUp delay-2s">
                 <p class="bottom-padding">April 23th, 2016 &middot; Edison, New Jersey &middot; 12 PM - 12 PM</p>
                 <a href="register.html" class="main-btn">I WANT TO HACK</a> 
-                <a href="sponsor.html" class="main-btn">I WANT TO SPONSOR</a> 
+                <a href="mailto:contact@hackehs.com?subject=Mentor" class="main-btn">I WANT TO MENTOR</a> 
             </div>
         </div>
 
     </div>
 
-    <div class="container-fluid slide bg-secondary section half-height" id="about">
+    <div class="container-fluid content">
 
-        <div class="row slide-content">
+        <br><br><br>
+
+        <div class="row section" id="about">
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
 
-                <h1>About</h1>
+                <h1 class="section-title">About</h1>
 
                 <hr class="small">
 
@@ -64,12 +55,11 @@
             </div>
         </div>
 
-    </div>
+        <br><br><br>
 
-    <div class="container-fluid slide full-height section" id="questions">
-        <div class="row slide-content">
+        <div class="row section" id="questions">
             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-                <h1 class="slide-title">Questions?</h1><br><br>
+                <h1 class="section-title">Questions?</h1><br><br>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -107,13 +97,11 @@
             </div>
         </div>
 
-    </div>
+        <br><br><br>
 
-    <div class="container-fluid slide section half-height bg-secondary" id="sponsors">
-
-        <div class="row slide-content">
+        <div class="row section" id="sponsors">
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-                <h1>Sponsors</h1>
+                <h1 class="section-title">Sponsors</h1>
                 <hr class="small">
                 <div class="sponsor large">
                 	<img src="res/img/mlh.png"/>
@@ -123,24 +111,11 @@
             </div>
         </div>
 
-    </div>
+        <br><br><br>
 
-    <div class="container-fluid slide half-height section" id="register">
-		<div class="row slide-content">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h1 class="slide-title">
-						Ready to register?
-					</h1>
-					<p>Great! Click <a href="register.html">here</a>!</p>
-			</div>
-		</div>
-    </div>
-
-    <div class="container-fluid slide full-height bg-secondary section" id="contact">
-
-        <div class="row slide-content">
+        <div class="row section" id="contact">
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-                <h1>Contact</h1>
+                <h1 class="section-title">Contact</h1>
                 <hr class="small">
                 <p>We're available on these social outlets:</p>
                 <p class="social-outlets">
@@ -152,12 +127,21 @@
             </div>
         </div>
 
-    </div>
-
-    <div class="container-fluid bg-secondary section section-footer">
-        <div class="row slide-content">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
-                <h4>Made with &hearts; by HackEHS</h4>
+        <div class="row footer">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+                <div class="left">
+                    <ul class="text-left">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#questions">Questions</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <br><br><br><br>
+                    <h4>Made with &hearts; by HackEHS</h4>
+                </div>                
             </div>
         </div>
     </div>
@@ -165,4 +149,4 @@
     <script src='js/main.js'></script>
 
 </body>
-</html>
+</html> 

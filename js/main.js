@@ -12,7 +12,7 @@ $('.logo').on('click', function(e) {
 });
 
 var scrollPoints = [];
-$('.slide').each(function(i) {
+$('.section').each(function(i) {
 	var posObj = {
 		pos: $(this).position().top,
 		type: $(this).hasClass('bg-primary')
@@ -30,17 +30,16 @@ $(window).on('scroll', function() {
 			scrollIndex = i - 1;
 		}
 	}
-	console.log(scrollIndex);
 	$('.navbar-custom-nav').removeClass('active');
 	$($('.navbar-custom-nav').get(scrollIndex)).addClass('active');
 });
 
 var defaultScrollOptions = {
 	speed: 'auto',
-	autoCoefficient: 1
+	autoCoefficient: 2
 };
 
-$('.navbar-custom-nav.top a').smoothScroll(defaultScrollOptions);
+$('.footer a').smoothScroll(defaultScrollOptions);
 $('.question-answer a').smoothScroll(defaultScrollOptions);
 
 $('.navbar-custom-nav.middle a').smoothScroll({
