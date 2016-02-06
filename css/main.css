@@ -16,6 +16,7 @@ html, body {
 
 body {
     font-family: "Avenir", Helvetica, Arial, sans-serif;
+    min-width: 980px;
 }
 
 .bg {
