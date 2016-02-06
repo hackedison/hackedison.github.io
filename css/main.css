@@ -140,6 +140,12 @@ body.main {
     background-color: rgb(251, 58, 95);
 }
 
+@media(max-width: 992px) {
+    .navbar-custom {
+        height: 100px;
+    }
+}
+
 .navbar-custom .navbar-custom-ul {
     list-style-type: none;
     margin: 0;
@@ -162,7 +168,7 @@ body.main {
     display: inline-block;
     padding: 15px;
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 1.26em;
 }
 
 .navbar-custom-nav.active {
@@ -195,14 +201,6 @@ body.main {
 
 .header-subtitle {
     font-size: 2em;
-}
-
-.right-align {
-    text-align: right;
-}
-
-.email-input {
-    margin-right: 0;
 }
 
 .slide-title {
