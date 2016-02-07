@@ -215,3 +215,11 @@ hr.small {
     padding: 10px 0;
     font-size: 1.2em;
 }
+
+.bottom-nav {
+    list-style-type: none;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+}
