@@ -223,3 +223,6 @@ hr.small {
 .bottom-nav a {
     text-decoration: none;
 }
+#other {
+    display: none;
+}

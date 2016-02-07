@@ -47,3 +47,5 @@ $('.navbar-custom-nav.middle a').smoothScroll({
     autoCoefficient: 1,
     offset: -100
 });
+
+$("#other").text(atob("SGFja0VIUyBoYWNrZWhzIGhhY2tFSFMgSGFja2F0aG9uIEVkaXNvbiBFZGlzb24gSGlnaCBTY2hvb2wgSGlnaCBTY2hvb2wgSGFja2F0aG9uIEFwcmlsIDIzIEFwcmlsIDI0IGhhY2tpbmcgaGFja2VycyBoYWNr"));
