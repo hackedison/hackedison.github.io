@@ -16,11 +16,12 @@
     <meta name="description"  content="HackEHS will be a 24 hour hackathon at Edison High School where hackers will be able to dream, develop, program, discover, and learn more about technology.">
     <script src='js/jquery.js'></script>
     <script src='js/smooth-scroll.js'></script>
+    <script src='js/main.js'></script>       
     
 </head>
 <body class="main">
 
-    <a id="mlh-trust-badge" style="position:fixed;top:0;right:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="https://mlh.io/seasons/s2016/events?utm_source=s2016&utm_medium=TrustBadge&utm_campaign=s2016" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png" alt="MLH Official - Spring 2016" style="width:100%;" ></a>
+    <a id="mlh-trust-badge" style="position:absolute;top:0;right:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="https://mlh.io/seasons/s2016/events?utm_source=s2016&utm_medium=TrustBadge&utm_campaign=s2016" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png" alt="MLH Official - Spring 2016" style="width:100%;" ></a>
 
     <div class="logo-view animated fadeInLeft">
         <img class="logo" src="res/img/logo.png">
@@ -37,8 +38,8 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animated fadeInUp delay-2s">
                 <p class="bottom-padding">April 23-24rd, 2016 &middot; 12 PM - 12 PM</p>
-                <a href="javascript:alert('Registration isn\'t open yet. Try next week, when it will be!');" class="main-btn">I WANT TO HACK</a> 
-                <a href="javascript:alert('Registration isn\'t open yet. Try next week, when it will be!');" class="main-btn">I WANT TO MENTOR</a> 
+                <a href="javascript:tryHack();" class="main-btn">I WANT TO HACK</a> 
+                <a href="javascript:tryMentor();" class="main-btn">I WANT TO MENTOR</a> 
             </div>
         </div>
 
@@ -70,6 +71,10 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="row text-center">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h1 class="question">What is a hackathon?</h1>
+                        <p class="question-answer">Fear not! We'll have a plethora of food choices for our guests. We encourage attendees to drop by the main lobby where all the refreshments will be served (even at midnight!). Vegetarian options will be available too.</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                         <h1 class="question">Do I need previous experience?</h1>
                         <p class="question-answer">Absolutely not! Hackathons are for beginners as well as seasoned developers. If you don't have experience with programming, we'll have plenty of workshops where you'll be able to pick up the basics.</p>
                     </div>
@@ -77,18 +82,14 @@
                         <h1 class="question">How do I get there?</h1>
                         <p class="question-answer">HackEHS will be located at Edison High School, Edison, New Jersey. If you'd like a map, then click <a href="https://goo.gl/maps/XTEgQSWJCUy">here.</a> We'll have staff outside the building that'll direct you to the main event, as well as give you a map of the school in case you get lost.</p>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <h1 class="question">Who is allowed to attend?</h1>
-                        <p class="question-answer">All highschoolers are allowed to attend, from the U.S and other countries as well. If you feel you're too old or young to attend, but have experience, you can <a href="#contact">contact</a> us.</p>
-                    </div>
                 </div>
             </div>
             <br><br><br>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="row text-center">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <h1 class="question">What if I get hungry?</h1>
-                        <p class="question-answer">Fear not! We'll have a plethora of food choices for our guests. We encourage attendees to drop by the main lobby where all the refreshments will be served (even at midnight!). Vegetarian options will be available too.</p>
+                        <h1 class="question">Who is allowed to attend?</h1>
+                        <p class="question-answer">All highschoolers are allowed to attend, from the U.S and other countries as well. If you feel you're too old or young to attend, but have experience, you can <a href="#contact">contact</a> us.</p>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                         <h1 class="question">What should I bring?</h1>
@@ -164,10 +165,6 @@
             </div>
         </div>
     </div>
-
-    <p id="other"></p>
-
-    <script src='js/main.js'></script>
 
 </body>
 </html> 

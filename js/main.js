@@ -48,4 +48,29 @@ $('.navbar-custom-nav.middle a').smoothScroll({
     offset: -100
 });
 
-$("#other").text(atob("SGFja0VIUyBoYWNrZWhzIGhhY2tFSFMgSGFja2F0aG9uIEVkaXNvbiBFZGlzb24gSGlnaCBTY2hvb2wgSGlnaCBTY2hvb2wgSGFja2F0aG9uIEFwcmlsIDIzIEFwcmlsIDI0IGhhY2tpbmcgaGFja2VycyBoYWNr"));
+var key = atob(atob("Tm1aak1tWmxOemMwWm1aak1HTTFORGc1WmpGbVlUQmtabVZpTldJd1ltVmlPREV4TkdSbU5BPT0="));
+
+function tryHack() {
+    // using cors.io because cross origin requests aren't allowed to typeform
+	$.getJSON('http://cors.io/?u=https://api.typeform.com/v0/form/StKOi9?key=' + key + '&completed=true', function(response) {
+        var total = response.stats.responses.completed;
+        if (total >= 400) {
+			alert('We\'re Sorry! Registration has closed because too many people have already registered.');
+		} else {
+			console.log('length: ' + total);
+			if (Date.now() < 1455339600000) { // before Feb 13
+				alert('Registration isn\'t open yet! Please try on February 13th or later.');
+			} else {
+				window.open('http://hackehs.com/register.html');
+			}
+		}
+	});
+}
+
+function tryMentor() {
+	if (Date.now() < 1455339600000) { // before Feb 13
+		alert('Registration isn\'t open yet! Please try on February 13th or later.');
+	} else {
+		window.open('http://hackehs.com/mentor.html');
+	}
+}
