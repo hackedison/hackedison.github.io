@@ -58,8 +58,8 @@ function tryHack() {
 			alert('We\'re Sorry! Registration has closed because too many people have already registered.');
 		} else {
 			console.log('length: ' + total);
-			if (Date.now() < 1455339600000) { // before Feb 13
-				alert('Registration isn\'t open yet! Please try on February 13th or later.');
+			if (Date.now() < 1455512400000) { // before Feb 15
+				alert('Registration isn\'t open yet! Please try on February 15th or later.');
 			} else {
 				window.open('http://hackehs.com/register.html');
 			}
@@ -68,8 +68,8 @@ function tryHack() {
 }
 
 function tryMentor() {
-	if (Date.now() < 1455339600000) { // before Feb 13
-		alert('Registration isn\'t open yet! Please try on February 13th or later.');
+	if (Date.now() < 1455512400000) { // before Feb 15
+		alert('Registration isn\'t open yet! Please try on February 15th or later.');
 	} else {
 		window.open('http://hackehs.com/mentor.html');
 	}
