@@ -50,7 +50,7 @@ $('.navbar-custom-nav.middle a').smoothScroll({
 
 var key = atob(atob("Tm1aak1tWmxOemMwWm1aak1HTTFORGc1WmpGbVlUQmtabVZpTldJd1ltVmlPREV4TkdSbU5BPT0="));
 
-var REGISTRATION_DATE = 1455512400000;
+var REGISTRATION_DATE = 1455498000000;
 
 function tryHack() {
 	if (Date.now() < REGISTRATION_DATE) { // before Feb 15
