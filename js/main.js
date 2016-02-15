@@ -54,7 +54,7 @@ var REGISTRATION_DATE = new Date(1455577200000);
 
 function tryHack() {
 	if (Date.now() < REGISTRATION_DATE.getTime()) { // before Feb 15
-		alert('Registration isn\'t open yet! Please try on February 15th or later.');
+		alert('Registration isn\'t open yet! Please try at February 15th, 6PM or later.');
 	} else {
 		// using cors.io because cross origin requests aren't allowed to typeform
 		$.getJSON('http://cors.io/?u=https://api.typeform.com/v0/form/StKOi9?key=' + key, function(response) {
@@ -72,7 +72,7 @@ function tryHack() {
 
 function tryMentor() {
 	if (Date.now() < REGISTRATION_DATE.getTime()) { // before Feb 15
-		alert('Registration isn\'t open yet! Please try on February 15th or later.');
+		alert('Registration isn\'t open yet! Please try at February 15th, 6PM or later.');
 	} else {
 		window.open('http://hackehs.com/mentor.html');
 	}
