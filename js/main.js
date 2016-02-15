@@ -50,30 +50,19 @@ $('.navbar-custom-nav.middle a').smoothScroll({
 
 var key = atob(atob("Tm1aak1tWmxOemMwWm1aak1HTTFORGc1WmpGbVlUQmtabVZpTldJd1ltVmlPREV4TkdSbU5BPT0="));
 
-var REGISTRATION_DATE = new Date(1455577200000);
-
 function tryHack() {
-	if (Date.now() < REGISTRATION_DATE.getTime()) { // before Feb 15
-		alert('Registration isn\'t open yet! Please try at February 15th, 6PM or later.');
-	} else {
-		// using cors.io because cross origin requests aren't allowed to typeform
-		$.getJSON('http://cors.io/?u=https://api.typeform.com/v0/form/StKOi9?key=' + key, function(response) {
-	        var total = response.stats.responses.completed;
-	        if (total >= 400) {
-				alert('We\'re Sorry! Registration has closed because too many people have already registered.');
-			} else {
-				console.log('length: ' + total);
-				window.open('http://hackehs.com/register.html');
-			}
-		});		
-	}
-    
+	// using cors.io because cross origin requests aren't allowed to typeform
+	$.getJSON('http://cors.io/?u=https://api.typeform.com/v0/form/StKOi9?key=' + key, function(response) {
+        var total = response.stats.responses.completed;
+        if (total >= 400) {
+			alert('We\'re Sorry! Registration has closed because too many people have already registered.');
+		} else {
+			console.log('length: ' + total);
+			window.open('http://hackehs.com/register.html');
+		}
+	});
 }
 
 function tryMentor() {
-	if (Date.now() < REGISTRATION_DATE.getTime()) { // before Feb 15
-		alert('Registration isn\'t open yet! Please try at February 15th, 6PM or later.');
-	} else {
-		window.open('http://hackehs.com/mentor.html');
-	}
+	window.open('http://hackehs.com/mentor.html');
 }
