@@ -50,10 +50,10 @@ $('.navbar-custom-nav.middle a').smoothScroll({
 
 var key = atob(atob("Tm1aak1tWmxOemMwWm1aak1HTTFORGc1WmpGbVlUQmtabVZpTldJd1ltVmlPREV4TkdSbU5BPT0="));
 
-var REGISTRATION_DATE = 1455498000000;
+var REGISTRATION_DATE = new Date(1455577200000);
 
 function tryHack() {
-	if (Date.now() < REGISTRATION_DATE) { // before Feb 15
+	if (Date.now() < REGISTRATION_DATE.getTime()) { // before Feb 15
 		alert('Registration isn\'t open yet! Please try on February 15th or later.');
 	} else {
 		// using cors.io because cross origin requests aren't allowed to typeform
@@ -71,7 +71,7 @@ function tryHack() {
 }
 
 function tryMentor() {
-	if (Date.now() < REGISTRATION_DATE) { // before Feb 15
+	if (Date.now() < REGISTRATION_DATE.getTime()) { // before Feb 15
 		alert('Registration isn\'t open yet! Please try on February 15th or later.');
 	} else {
 		window.open('http://hackehs.com/mentor.html');
