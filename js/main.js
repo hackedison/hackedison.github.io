@@ -47,22 +47,3 @@ $('.navbar-custom-nav.middle a').smoothScroll({
     autoCoefficient: 1,
     offset: -100
 });
-
-var key = atob(atob("Tm1aak1tWmxOemMwWm1aak1HTTFORGc1WmpGbVlUQmtabVZpTldJd1ltVmlPREV4TkdSbU5BPT0="));
-
-function tryHack() {
-	// using cors.io because cross origin requests aren't allowed to typeform
-	$.getJSON('http://cors.io/?u=https://api.typeform.com/v0/form/StKOi9?key=' + key, function(response) {
-        var total = response.stats.responses.completed;
-        if (total >= 400) {
-			alert('We\'re Sorry! Registration has closed because too many people have already registered.');
-		} else {
-			console.log('length: ' + total);
-			window.open('http://hackehs.com/register.html');
-		}
-	});
-}
-
-function tryMentor() {
-	window.open('http://hackehs.com/mentor.html');
-}
