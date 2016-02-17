@@ -46,8 +46,12 @@ body {
     font-weight: bold;
 }
 
-.sponsor-link a:hover {
+.link a:hover {
     text-decoration: underline;
+}
+
+.link a:visited {
+    color: #F53765;
 }
 
 .text-left {
