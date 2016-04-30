@@ -230,3 +230,13 @@ hr.small {
 #other {
     display: none;
 }
+
+a.img-link {
+    text-decoration: none;
+}
+
+.spacer {
+    width: 50px;
+    height: 10px;
+    display: inline-block;
+}
