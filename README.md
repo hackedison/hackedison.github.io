@@ -1,2 +1,2 @@
-# hackehs.github.io
-hackehs website
+# hackedison.github.io
+hackedison website
