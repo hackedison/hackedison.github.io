@@ -17,21 +17,6 @@
   animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -89,6 +74,30 @@
   }
 }
 
+@keyframes fadeInLeft-mobile {
+	from {
+		opacity: 0;
+		left: -30px;
+	}
+	
+	to {
+		opacity: 1;
+		left: 20px;
+	}
+}
+
+@-webkit-keyframes fadeInLeft-mobile {
+	from {
+		opacity: 0;
+		left: -30px;
+	}
+	
+	to {
+		opacity: 1;
+		left: 20px;
+	}
+}
+
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
@@ -96,35 +105,11 @@
   animation-fill-mode: forward;
 }
 
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    right: -30px;
-  }
-
-  to {
-    opacity: 1;
-    right: 200px;
-  }
-}
-
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    right: -30px;
-  }
-
-  to {
-    opacity: 1;
-    right: 200px;
-  }
-}
-
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-  -webkit-animation-fill-mode: forward;
-  animation-fill-mode: forward;
+@media (max-width: 992px) {
+	.fadeInLeft {
+		-webkit-animation-name: fadeInLeft-mobile;
+		animation-name: fadeInLeft-mobile;
+	}
 }
 
 @keyframes spinLogo {
