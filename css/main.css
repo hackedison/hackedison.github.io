@@ -3,6 +3,10 @@
     src: url(../res/fonts/Avenir.otf);
 }
 
+.hackerearth {
+    transform: scale(0.5, 0.5);
+}
+
 html, body {
     padding: 0;
     margin: 0;
