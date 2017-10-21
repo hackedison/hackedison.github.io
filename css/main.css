@@ -3,8 +3,14 @@
     src: url(../res/fonts/Avenir.otf);
 }
 
-.hackerearth {
+.scale-down {
+    -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
+}
+
+.scale-down-2 {
+    -webkit-transform: scale(0.4, 0.4);
+    transform: scale(0.4, 0.4);
 }
 
 html, body {
